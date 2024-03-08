@@ -93,6 +93,9 @@ run().catch(console.dir);
 app.get('/', (req,res)=>{
   res.send('Chocolate shop is running');
 })
+app.get('/demo', (req,res)=>{
+  res.send('Chocolate shop is running');
+})
 
 app.listen(port, () =>{
   console.log(`coffee server is running on port:${port}`);
